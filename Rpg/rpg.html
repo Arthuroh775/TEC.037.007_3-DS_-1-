@@ -8,6 +8,7 @@
  alert("O Chefe Surgiu: 300hp")
  for (let turno = 1 ; turno <= 15; turno++)
  {
+    
     if(hpBoss <= 0) 
     {
         alert("O boss foi derrotado!");
@@ -17,12 +18,13 @@
     //acao = Math.floor(Math.random() * 3) + 1
 
     // Entrada do Usuário
-    let menu = "Escolha sua ação:\n"
+    let menu = "\nRodada: "+turno
+                + "\n"
+                +"\nEscolha sua ação:\n"
                 + "1 - Ataque Básico \n"
                 + "2 - Skill\n"
                 + "3 - Ultimate\n"
                 + "4 - Fugir \n"
-                + "5- Fazer nada\n"
     let escolha = prompt(menu)
     let acao = parseInt(escolha)
 
@@ -33,8 +35,8 @@
         // hpBoss = hpBoss - 20
         hpBoss -= 20;
         manaHeroi += 30
-        alert("O Boss atacou... Dano de 30 HP");
-        hpHerói -= 30;
+        alert("O Boss atacou... Dano de 10 HP");
+        hpHerói -= 10;
         break;
 
         case 2 : 
@@ -43,8 +45,8 @@
         hpBoss -= 50;
         manaHeroi -= 30;
         manGastaTotal += 30;
-        alert("O Boss atacou... Dano de 30 HP");
-        hpHerói -= 30;
+        alert("O Boss atacou... Dano de 20 HP");
+        hpHerói -= 20;
     } else {
         alert(" Mana insuficiente!")
     }
@@ -55,8 +57,8 @@
           alert("Ultimate. 150 de dano ");    
           hpBoss -= 150;
           manGastaTotal = 0; 
-          alert("O Boss atacou... Dano de 30 HP");
-        hpHerói -= 30;
+          alert("O Boss atacou... Dano de 50 HP");
+        hpHerói -= 50;
         } else{
             alert("Ultimate não carregada!");
         }
@@ -67,15 +69,14 @@
         alert("\n você recuperou 30 de vida");
         hpHerói += 30;
         manaHeroi += 20;
-        break;
-
-        case 5: 
-        alert("você não fez nada! o chefe atacou 20 de dano");
-        hpHerói -= 20;
+        alert("\n o Boss recuperou 20 de vida")
+        hpBoss += 20
         break;
     }
     manaHeroi+= 5 ;
-    alert("Hp do chefe : "+hpBoss + " |Mana do herói : "+manaHeroi + "|Hp do Herói : "+hpHerói);
+
+
+    alert("\nHp do chefe : "+hpBoss + " |Mana do herói : "+manaHeroi + "|Hp do Herói : "+hpHerói);
  }
  if (hpBoss > 0 ){
     alert ("O chefe venceu! O herói foi derrotado.")
