@@ -1,53 +1,86 @@
  <script>
  let hpBoss = 300;
+  let hpHerói = 100
  let manaHeroi = 100; 
  let manGastaTotal = 0;
  let acao;
 
- console.log("O Chefe Surgiu: 300hp")
+ alert("O Chefe Surgiu: 300hp")
  for (let turno = 1 ; turno <= 15; turno++)
  {
     if(hpBoss <= 0) 
     {
-        console.log("O boss foi derrotado!");
+        alert("O boss foi derrotado!");
         break;
     }
     // retorna 0,1 ou 2. soma para trazer 1,2, ou 3
-    acao = Math.floor(Math.random() * 3) + 1
+    //acao = Math.floor(Math.random() * 3) + 1
+
+    // Entrada do Usuário
+    let menu = "Escolha sua ação:\n"
+                + "1 - Ataque Básico \n"
+                + "2 - Skill\n"
+                + "3 - Ultimate\n"
+                + "4 - Fugir \n"
+                + "5- Fazer nada\n"
+    let escolha = prompt(menu)
+    let acao = parseInt(escolha)
+
     switch(acao)
     {
         case 1: 
-        console.log("Ataque Básico . 20 dano");
+        alert("Ataque Básico . 20 dano");
         // hpBoss = hpBoss - 20
         hpBoss -= 20;
+        manaHeroi += 30
+        alert("O Boss atacou... Dano de 30 HP");
+        hpHerói -= 30;
         break;
 
         case 2 : 
         if (manaHeroi >=30){
-        console.log("Skill. 50 dano");
+        alert("Skill. 50 dano");
         hpBoss -= 50;
         manaHeroi -= 30;
+        manGastaTotal += 30;
+        alert("O Boss atacou... Dano de 30 HP");
+        hpHerói -= 30;
     } else {
-        console.log(" Mana insuficiente!")
+        alert(" Mana insuficiente!")
     }
     break;
        case 3 :
         if (manGastaTotal >= 50)
         {
-          console.log("Ultimate. 150 de dano ");    
+          alert("Ultimate. 150 de dano ");    
           hpBoss -= 150;
           manGastaTotal = 0; 
+          alert("O Boss atacou... Dano de 30 HP");
+        hpHerói -= 30;
         } else{
-            console.log("Ultimate não carregada!")
+            alert("Ultimate não carregada!");
         }
         break;
+
+        case 4 : 
+        alert ("Você fugiu. 0 de dano");
+        alert("\n você recuperou 30 de vida");
+        hpHerói += 30;
+        manaHeroi += 20;
+        break;
+
+        case 5: 
+        alert("você não fez nada! o chefe atacou 20 de dano");
+        hpHerói -= 20;
+        break;
     }
-    console.log ("Hp do chefe : "+hpBoss + " |Mana do herói : "+manaHeroi);
+    manaHeroi+= 5 ;
+    alert("Hp do chefe : "+hpBoss + " |Mana do herói : "+manaHeroi + "|Hp do Herói : "+hpHerói);
  }
  if (hpBoss > 0 ){
-    console.log ("O chefe venceu! O herói foi derrotado.")
+    alert ("O chefe venceu! O herói foi derrotado.")
  } else {
-    console.log(" O herói venceu! O chefe foi derrotado.")
+    alert(" O herói venceu! O chefe foi derrotado.")
  }
  </script>
  
