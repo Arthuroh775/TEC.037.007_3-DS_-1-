@@ -44,7 +44,72 @@ section{
     padding-top: 1.5rem;
 }
 .navbar a {
-    margin: 0.1rem;
+    margin: 6rem;
     font-size: 1.8rem;
     color: var(--white);
+}
+.navbar :hover{
+    color: yellow;
+    text-decoration: underline;
+    text-decoration-color: var(--white);
+
+    
+}
+ .logo img {
+  margin-left: -350px;
+}
+.icons img {
+    margin: 1 rem;
+    cursor: pointer;
+}
+.icons img :hover {
+    width: 40px;
+    height: 40px;
+}
+
+
+.btn{
+    background-color: var(--main-color);
+    border-radius: 20%;
+    color: var(--white);
+    padding: 1rem 3rem ;
+    font-size: 1.7rem;
+    cursor: pointer;
+    margin-top: 1rem;
+
+}
+.btn:hover{
+    letter-spacing: 0.1rem;
+}
+.home-container{
+ background: url(Naruto\ shippuden.png);
+ height: 100vh;
+ background-position: center;
+ background-size: cover;
+}
+.home-container {
+  background: 
+    linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.2)),
+    url('Naruto\ shippuden.png') center/cover;
+  height: 100vh;
+}
+.home-container section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+.content{
+    max-width: 60rem;
+}
+.content{
+    color: var(--white);
+    font-size: 6rem;
+}
+.content p {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.8;
+    padding: 1rem 0 ;
+    display: inline-block;
 }
