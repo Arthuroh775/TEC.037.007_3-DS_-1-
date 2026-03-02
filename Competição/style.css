@@ -113,3 +113,56 @@ section{
     padding: 1rem 0 ;
     display: inline-block;
 }
+.title{
+    font-size: 4rem;
+    color: var(--main-color);
+    text-align: center;
+    text-transform: uppercase; 
+    margin-bottom: 4rem ;  
+    margin-top: 2rem; 
+}
+.title span {
+    color: var(--white);
+    text-transform: uppercase;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    background-color: var(--black);
+    gap: 1.5rem;
+}
+.about .row .content {
+    padding: 2rem;
+}
+.about .row .content h3 {
+font-size: 3rem;
+color: var(--white);
+}
+
+.about .row .content p{
+font-size: 1.6rem;
+color: var(--white);
+padding: 1rem 0;
+line-height:  1.8;
+}
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 1.5rem;
+}
+.menu .box-container .box {
+    text-align: center;
+    border: var(--border);
+    padding: 5rem;
+    cursor: pointer;
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+
+.menu .box-container .box h3 {
+    color: var(--white);
+    font-size: 2rem;
+    padding: 1rem 0;
+}

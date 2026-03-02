@@ -1,0 +1,28 @@
+<script>
+    // array serve para montar listas como no exemplo abaixo
+let frutas = ["Banana","Maçã","Cachorro","Morango"];
+
+alert(frutas[0]); 
+alert(frutas[1]); 
+alert(frutas[2]);
+alert(frutas[3]);
+// o Push serve para adicionar mais elementos na lista
+frutas.push("Alface");
+alert(frutas[4]);   //["Banana","Maçã","Cachorro","Morango","Alface"]
+
+// Remover do FINAL
+frutas.pop();
+console.log(frutas); // ["Banana", "Maçã"]
+
+// Adicionar no INÍCIO
+frutas.unshift("Morango");
+console.log(frutas); // ["Uva", "Banana", "Maçã"]
+
+// Remover do INÍCIO
+frutas.shift();
+console.log(frutas); // ["Maçã"]
+
+
+console.log(frutas.length); // tamanho = 4
+
+</script>
