@@ -16,7 +16,7 @@
         {id:3, nome:"Eldritch Stars", dano: 60, custo: 0, energia: 60},
     ];
     const atacarBoss = (tipoAtaque) => {
-        const habilidade = skills.find(s => s.id == escolhaId);
+        const habilidade = skills.find(s => s.id == tipoAtaque);
         if (hero.mp >= habilidade.custo
             && hero.energia >= habilidade.energia) {
                 boss.hp -= habilidade.dano;
