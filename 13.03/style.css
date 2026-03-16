@@ -1,0 +1,24 @@
+body{
+    background-image: url(assets/back.gay.gif) ;
+      background-size: cover;      /* Cobre toda a área sem distorcer */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição */
+  background-attachment: fixed; /* Efeito parallax (opcional) */
+}
+div {
+    color: rgb(8, 8, 8);
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+   
+}
+#col-botoes img,
+#col-msg img {
+    margin-top: 60px; /* ajuste esse valor para descer mais ou menos */
+    vertical-align: bottom;
+}
+
+/* Compensa a diferença de altura entre os dois (350px vs 300px) */
+#col-msg img {
+    margin-top: 140px; /* 60px base + 25px para compensar os 50px de diferença */
+}
