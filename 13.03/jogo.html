@@ -25,76 +25,90 @@
     <div class="container">
         <div class="card text-center">
             <div class="card-header">RPG: Criado por Arthur Martins</div>
-            <div class="card-body" id ="tela" style="background-image:url('assets/Cenario_3.gif');  background-size: cover;   
+            <div class="card-body" id="tela" style="background-image:url('assets/Cenario_3.gif');  background-size: cover;   
   background-repeat: no-repeat; 
 ;">
-            <p class="card-text">Turno 1</p>
-            <div class="row">
+                <p class="card-text" style="color: white; font-size: 1.7rem ; margin-left: 75px;">Turno 1</p>
+                <div class="row">
 
-                <div class="col text-end" id="col-heroi">
-                    <ul class="list-group float-center" style="width: 225px">
-                        <li id="nome-heroi" class="list-group-item group-item-info list-group-item-success">Naruto</li>
-                        <li id="titulo-heroi" class="list-group-item">🐅</li>
-                        <li id="hp-heroi" class="list-group-item ">HP <progress id="hp-heroi" value="800" max="800"
-                                style="accent-color: rgb(9, 214, 88);"></progress></li>
-                        <li id="mp-heroi" class="list-group-item"> Chakra <progress id="mp-heroi" value="300" max="300"
-                                style="accent-color: rgb(53, 53, 97);"></progress> </li>
-                        <li id="en-heroi" class="list-group-item">Besta Enjaulada <progress id="energia-heroi"
-                                value="800" max="800" style="accent-color: rgb(255, 242, 0);"></progress>
-                        </li>
-                    </ul>
+                    <div class="col text-end" id="col-heroi">
+                        <ul class="list-group float-center" style="width: 225px">
+                            <li id="nome-heroi" class="list-group-item group-item-info list-group-item-success">Naruto
+                                Uzumaki</li>
+                            <li id="titulo-heroi" class="list-group-item">🐅</li>
+                            <li id="hp-heroi" class="list-group-item ">HP <progress id="hp-heroi" value="800" max="800"
+                                    style="accent-color: rgb(9, 214, 88);"></progress></li>
+                            <li id="mp-heroi" class="list-group-item"> Chakra <progress id="mp-heroi" value="300"
+                                    max="300" style="accent-color: rgb(53, 53, 97);"></progress> </li>
+                            <li id="en-heroi" class="list-group-item">Kurama <progress id="energia-heroi" value="800"
+                                    max="800" style="accent-color: rgb(255, 242, 0);"></progress>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                    <div class="col text-end" id="col-botoes">
+
+                        <img src="assets/dessa vez vai.gif" width="230" height="380" style="margin-top: 140px;"></img>
+
+                    </div>
+
+                    <div class="col text-start" id="col-msg">
+
+                        <img src="assets/Sasuke.viado.gif" width="300" height="300" class="card-img-bottom" style="margin-top: 240px;"></img>
+
+                    </div>
+
+                    <div class="col text-end" id="col-boss">
+                        <ul class="list-group float-end" style="width: 225px;">
+                            <li id="nome-heroi" class="list-group-item list-group-item-danger">Sasuke Uchiha</li>
+                            <li id="titulo-heroi" class="list-group-item">👁️‍🗨️</li>
+                            <li id="hp-heroi" class="list-group-item">HP <progress id="hp-heroi" value="800" max="800"
+                                    style="accent-color: rgb(14, 233, 43); "></progress></li>
+                            <li id="mp-heroi" class="list-group-item"> Chakra <progress id="mp-boss" value="300"
+                                    max="300" style="accent-color: rgb(14, 13, 13);"></progress></li>
+                            <li id="en-heroi" class="list-group-item">Sharingan <progress id="energia-heroi" value="800"
+                                    max="800" style="accent-color: rgb(231, 18, 18);"></progress></li>
+                        </ul>
+
+
+
+                    </div>
+                    <div class="btn-group" id="controles" style="width: 250px; height: 40px; margin-right: 900px; ">
+                        <button class="btn btn-dark">ATTACK</button>
+                        <button class="btn btn-dark">Skill</button>
+                        <button class="btn btn-dark">Ultimate</button>
+                    </div>
+                </div>
+
+                <div class="row">
+
 
 
 
                 </div>
-                <div class="col text-end" id="col-botoes">
-
-                    <img src="assets/dessa vez vai.gif" width="230" height="380"></img>
-
-                </div>
-                
-                <div class="col text-start" id="col-msg">
-
-                    <img src="assets/Sasuke.viado.gif" width="300" height="300" class="card-img-bottom"></img>
-
-                </div>
-                
-                <div class="col text-end" id="col-boss">
-                    <ul class="list-group float-end" style="width: 225px;">
-                        <li id="nome-heroi" class="list-group-item list-group-item-danger">Sasuke Uchiha</li>
-                        <li id="titulo-heroi" class="list-group-item">👁️‍🗨️</li>
-                        <li id="hp-heroi" class="list-group-item">HP <progress id="hp-heroi" value="800" max="800"
-                                style="accent-color: rgb(14, 233, 43); "></progress></li>
-                        <li id="mp-heroi" class="list-group-item"> Chakra <progress id="mp-boss" value="300" max="300"
-                                style="accent-color: rgb(14, 13, 13);"></progress></li>
-                        <li id="en-heroi" class="list-group-item">Sharingan <progress id="energia-heroi" value="800"
-                                max="800" style="accent-color: rgb(231, 18, 18);"></progress></li>
-                    </ul>
-
-                    
-
-                </div>
-                <div class="btn-group" id="controles">
-                    <button class="btn btn-dark">ATTACK</button>
-                    <button class="btn btn-dark">Skill</button>
-                    <button class="btn btn-dark">Ultimate</button>
-                </div>
-            </div>
-
-            <div class="row">
-
-                
-
-                
-            </div>
                 <div class="card-footer"></div>
             </div><!-- card-->
         </div><!--container-->
 
     </div>
 
+    <div class="Explication">
+        <h1>Descrição</h1>
+        <h2>Naruto VS Sasuke</h2>
+        <p> Naruto Uzumaki e Sasuke Uchiha. Inspirado no confronto final entre os personagens, o jogo traz batalhas
+            rápidas, estratégicas e cheias de ação, onde cada decisão pode definir o vencedor.
+
+            Com habilidades icônicas como Rasengan, Chidori e técnicas avançadas como o Modo Kurama e o Susanoo, os
+            jogadores precisam dominar o uso do chakra, executar combos precisos e reagir com reflexos rápidos para
+            superar o adversário.
+
+            Com visual em estilo 2D e efeitos vibrantes, o jogo oferece uma experiência imersiva que recria a rivalidade
+            lendária entre Naruto e Sasuke, desafiando o jogador a provar quem é o verdadeiro mais forte.</p>
+    </div>
 </body>
 
-
+<script src="jogo.js"></script>
 
 </html>
